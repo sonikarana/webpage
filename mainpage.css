@@ -1,0 +1,158 @@
+.body, *{
+	margin: 10;
+	padding: 10;
+	box-sizing: border-box;
+}
+html, body{
+	font-family: "Tahoma", Tahoma, sans-serif;
+	font-size: 16px;
+	text-align: justify;
+	color: #474747;
+	background-image: url("plainn.jpg");
+	/*background-repeat: repeat;*/
+	background-attachment:fixed;
+	background-size: auto;
+}
+
+.fixed-width{
+	width: 1000px;
+	margin: 0 auto;
+}
+.fixed-width > nav > ul > li{
+	list-style-type: none;
+}
+a{
+	color: inherit;
+	font-weight: bold;
+	text-decoration: underline;
+}
+.fixed-width nav{
+	float: right;
+	text-transform: uppercase;
+}
+.fixed-width nav ul li{
+	color: #000000;
+	float: left;
+	margin-right: 3rem;
+	padding-top: 3rem;
+}
+.fixed-width nav ul li: last-child{
+	margin-right: 0;
+}
+.fixed-width nav ul li b{
+	color: #474747;
+	display: block;
+	font-size: 1rem;
+	font-style: normal;
+}
+.page-header > div{
+	position: relative;
+}
+#logo{
+	font-family: "Pacifico", cursive;
+	font-size: 3rem;
+	position: absolute;
+	bottom: 0;
+}
+.page-header{
+	border-top: 5px solid #ebebeb;
+	padding-bottom: 2em;
+}
+.page-footer{
+	background-color: grey;
+	font-size: 1rem;
+	height: 40px;
+	color: #111111;
+}
+.page-footer .copyright{
+	float: left;
+}
+.page-footer .credits{
+	float: right;
+}
+.page-footer .fixed-width{
+	padding-top: 0.5rem;
+}
+h1,h2,h3,h4,h5,h6, .title{
+	font-family: "Economica", sans-serif;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.main-visual .fig-caption{
+	background-color: #f6f6f6;
+	padding: 0.5rem 1rem;
+}
+.main-visual .fig-caption > strong{
+	font-size: 1.5rem;
+}
+p{
+	margin: 0.5rem 0;
+	line-height: 1.5;
+}
+.main-visual{
+	margin-bottom: 3rem;
+}
+.claim{
+	float: left;
+	width: 30%;
+	margin-right: 5%;
+	margin-left: 10%;
+	margin-bottom: 5%;
+	margin-top: 5%;
+	outline-style: groove;
+	padding: 2%;
+}
+.claim > header > i{
+	font-size: 2.5rem;
+	font-weight: bolder;
+	color: #000000;
+	float: left;
+	width: 25%;
+}
+.claim > header > h2{
+	float: left;
+	width: 75%;
+}
+div > strong{
+	font-size: 3rem;
+	font-weight: bold;
+}
+div > i{
+	font-size: 2.5rem;
+	font-weight: bolder;
+	color: #000000;
+	float: left;
+	width: 10%;
+}
+.animated-text{
+  position: relative;
+  height: 70px;
+  overflow: hidden;
+}
+.animated-text h3{
+  color: blue;
+  font-size: 2em;
+  font-weight: 500;
+  line-height: 30px;
+  letter-spacing: 1px;
+}
+.animated-text h3:nth-child(1){
+  animation: text-move 10s infinite;
+}
+@keyframes text-move{
+  0%{
+    margin-left: 0;
+  }
+  25%{
+    margin-left: -120px;
+  }
+  50%{
+    margin-left: -280px;
+  }
+  75%{
+    margin-left: -120px;
+  }
+  100%{
+    margin-left: 0;
+  }
+}
